@@ -259,7 +259,7 @@ html.dark .dark-blue {
    color: #6897bb;
 }
 html.dark .header__logo {
-   background: url(/img/logo.svg);
+   background: url(../img/logo.svg);
 }
 html.dark .hamb__icon {
    fill: #cdcdcd;

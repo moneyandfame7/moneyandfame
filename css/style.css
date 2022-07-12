@@ -133,7 +133,7 @@ span {
 .header__logo {
    width: 198px;
    height: 35px;
-   background: url(/img/light-logo.svg);
+   background: url(../img/light-logo.svg);
 }
 
 /* Links */
