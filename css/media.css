@@ -320,7 +320,6 @@ html.light h6 {
 html.light .color-theme {
    background: url(../img/moon.svg) 0 0/100% no-repeat;
 }
-html.light .header__action:hover,
-html.light .header__action:active {
+html.light .header__action:hover {
    background: #167fff6b;
 }
