@@ -1,0 +1,326 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1170px) {
+   [class*='__container'] {
+      max-width: 970px;
+   }
+   .main__about {
+      padding: 0 5px;
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1000px) {
+   .header {
+      height: 90px;
+      background-color: #f9f9f9;
+   }
+   .header__container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+   .header__logo {
+      width: 50px;
+      overflow: hidden;
+      flex: 0 0 50px;
+   }
+   .menu__wrapper {
+      justify-content: flex-start;
+      gap: 50%;
+   }
+   .menu__wrapper .menu {
+      display: none;
+   }
+   .hamb {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+   }
+   .hamb__field {
+      padding: 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .hamb__field:active,
+   .hamb__field:hover {
+      background: #167fff6b;
+      cursor: pointer;
+   }
+   .hamb__icon {
+      width: 24px;
+      height: 24px;
+      fill: #313130;
+   }
+   .popup {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 40%;
+      height: 100%;
+      z-index: 100;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+      background-color: #ede8e8;
+      transition: 0.5s ease;
+      padding: 10px 25px;
+   }
+   .popup.open {
+      right: 0;
+   }
+   .popup .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 84px 10px 0;
+   }
+   .popup .menu > li {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+   }
+   .popup .menu > li:last-child {
+      padding: 25px 10px;
+   }
+   .popup .menu > li:nth-child(3) {
+      position: relative;
+   }
+   .popup .menu > li:nth-child(3)::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+   }
+   .popup .header__button {
+      text-align: center;
+   }
+   .popup .menu__link {
+      padding: 25px 10px;
+      color: #000;
+   }
+   .popup .menu__link:active,
+   .popup .menu__link:hover {
+      background-color: #167fff6b;
+      border-radius: 20px;
+   }
+   .popup__overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      z-index: 50;
+   }
+   .popup__overlay.open {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5);
+   }
+   .popup .hamb {
+      top: 16px;
+      right: 40px;
+   }
+   .popup .hamb__field:active,
+   .popup .hamb__field:hover {
+      background-color: #167fff6b;
+   }
+   .header__action {
+      position: absolute;
+      top: 8px;
+      right: 80px;
+   }
+   .main {
+      margin-top: 110px;
+   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+   .header__logo {
+      width: 50px;
+      overflow: hidden;
+      flex: 0 0 50px;
+   }
+   .main__container {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+   .main__about {
+      padding: 0 15px;
+   }
+   .content__text_uppercase {
+      padding: 30px;
+      font-size: 38px;
+      display: flex;
+      align-items: center;
+   }
+}
+
+@media only screen and (max-width: 646px) {
+   .content__text_uppercase {
+      padding: 20px;
+   }
+   .content__text {
+      padding: 20px;
+   }
+}
+
+@media only screen and (max-width: 587px) {
+   .popup {
+      width: 60%;
+   }
+   .main__title {
+      font-size: 65px;
+   }
+   .content__text_uppercase {
+      padding: 20px;
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 486px) {
+   .main__content {
+      flex-direction: column;
+   }
+   .content__text_uppercase {
+      border-bottom: none;
+   }
+   .content__text {
+      border: 1px solid #ffffff33;
+      border-radius: 20px;
+      animation: move-left 0.9s ease forwards 1.5s;
+   }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+   .popup {
+      width: 100%;
+   }
+   .popup .menu > li {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+   }
+   .main__subtitle {
+      line-height: 30px;
+   }
+}
+
+/* Color theme */
+/** dark */
+
+html.dark body {
+   color: #cdcdcd;
+   background-color: #232529;
+}
+html.dark h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: #cdcdcd;
+}
+html.dark [class*='__text'] {
+   color: #cdcdcd;
+}
+html.dark .menu__link {
+   color: #cdcdcd;
+}
+html.dark .header {
+   background-color: #232529;
+}
+html.dark .main__title {
+   color: #fff;
+}
+html.dark .main__subtitle {
+   color: #cdcdcd;
+}
+html.dark .content__text_uppercase {
+   color: #fff;
+}
+html.dark .yellow {
+   color: #ffc66d;
+}
+html.dark .violet {
+   color: #9876aa;
+}
+html.dark .dark-blue {
+   color: #6897bb;
+}
+html.dark .header__logo {
+   background: url(/img/logo.svg);
+}
+html.dark .hamb__icon {
+   fill: #cdcdcd;
+}
+html.dark .popup {
+   background-color: #232529;
+}
+html.dark .popup .menu__link {
+   color: #cdcdcd;
+}
+html.dark .popup .menu > li:nth-child(3)::after {
+   background-color: #716f6e;
+}
+html.dark .color-theme {
+   background: url(../img/sun.svg) 0 0/100% no-repeat;
+}
+html.dark .header__action:hover,
+html.dark .header__action:active {
+   background-color: #cdcdcd17;
+}
+html.dark .hamb__field:active,
+html.dark .hamb__field:hover {
+   background-color: #cdcdcd17;
+}
+
+/** light */
+html.light body {
+   color: rgb(31 41 55);
+   background-color: #f9f9f9;
+}
+html.light header {
+   background-color: #f9f9f9;
+}
+html.light .main__subtitle {
+   color: #313130;
+}
+html.light .content__text_uppercase {
+   color: rgb(31 41 55);
+}
+html.light .yellow {
+   color: #d29025;
+}
+html.light .violet {
+   color: #8a56a6;
+}
+html.light .dark-blue {
+   color: #214b6b;
+}
+
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+   color: rgb(31 41 55);
+}
+html.light .color-theme {
+   background: url(../img/moon.svg) 0 0/100% no-repeat;
+}
+html.light .header__action:hover,
+html.light .header__action:active {
+   background: #167fff6b;
+}
