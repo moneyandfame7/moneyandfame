@@ -37,7 +37,7 @@ const burgerMenu = () => {
    links.forEach((element) => {
       element.addEventListener('click', closeOnClick);
    });
-
+   overlay.addEventListener('click', hambHandler);
    hamb.forEach((element) => {
       element.addEventListener('click', hambHandler);
    });
