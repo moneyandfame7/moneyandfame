@@ -1,8 +1,63 @@
 'use strict';
-document.addEventListener('DOMContentLoaded', () => {
-   document.querySelector('.wrapper').classList.add('loaded');
+
+//* скролл к нужному элементу на странице
+$('.scrollto a').on('click', function () {
+   let href = $(this).attr('href');
+
+   $('html, body').animate(
+      {
+         scrollTop: $(href).offset().top,
+      },
+      {
+         duration: 500, // по умолчанию «400»
+         easing: 'linear', // по умолчанию «swing»
+      }
+   );
+
+   return false;
 });
 
+//* анимация элементов при скролле
+let controller = new ScrollMagic.Controller();
+
+let revealElements = document.getElementsByClassName('card__item');
+for (let i = 0; i < revealElements.length; i++) {
+   // create a scene for each element
+   new ScrollMagic.Scene({
+      triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+      offset: 50, // start a little later
+      triggerHook: 0.8,
+   })
+      .setClassToggle(revealElements[i], 'visible') // add class toggle
+      .addTo(controller);
+}
+
+//* ********************************** */
+
+document.addEventListener('DOMContentLoaded', () => {
+   document.querySelector('.wrapper').classList.add('loaded');
+   checkScroll();
+});
+
+//* ********************************** */
+
+//* анимация шапки при скролле
+const header = document.querySelector('#header'); // шапка
+
+window.addEventListener('scroll', () => checkScroll()); // событие скролла
+
+history.scrollRestoration = 'manual'; // вверх экрана при перезагрузке страницы
+
+const checkScroll = () => {
+   const scrollPosition = window.scrollY;
+   if (scrollPosition !== 0) {
+      header.classList.add('active');
+   } else {
+      header.classList.remove('active');
+   }
+};
+
+//* бургер меню
 const burgerMenu = () => {
    const hamb = document.querySelectorAll('#hamb');
    const popup = document.querySelector('#popup');
@@ -43,6 +98,7 @@ const burgerMenu = () => {
    });
 };
 
+//* цветовая тема
 const windowLoad = () => {
    // HTML
    const htmlBlock = document.documentElement;

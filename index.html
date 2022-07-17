@@ -15,19 +15,19 @@
 <body>
    <div class="wrapper">
       <!-- Header -->
-      <header class="header">
+      <header class="header" id="header">
          <div class="header__container">
             <div class="menu__wrapper">
                <a href="index.html" class="header__logo" id="logo"></a>
-               <ul class="menu" id="menu">
+               <ul class="menu scrollto" id="menu">
                   <li class="menu__item">
-                     <a href="html-css.html" class="menu__link" target="_blank">Layout</a>
+                     <a href="#sec1" class="menu__link">Layout</a>
                   </li>
                   <li class="menu__item">
-                     <a href="javascript.html" class="menu__link" target="_blank">JavaScript</a>
+                     <a href="#sec2" class="menu__link">JavaScript</a>
                   </li>
                   <li class="menu__item">
-                     <a href="prompt.html" class="menu__link" target="_blank">Prompt</a>
+                     <a href="#sec3" class="menu__link">Prompt</a>
                   </li>
                   <li class="menu__item">
                      <a href="https://t.me/moneyandfame7" class="header__button" target="_blank">Send message</a>
@@ -62,7 +62,8 @@
       <!-- Page -->
       <main class="page">
          <!-- Section main -->
-         <section class="main">
+
+         <section class="page__main main">
             <div class="main__container">
                <div class="main__about">
                   <h1 class="main__title">About <span>me</span></h1>
@@ -84,16 +85,80 @@
             </div>
          </section>
 
-         <!-- Section name -->
-         <section class="имя_класса">
-            <div class="имя блока__container">
+         <!-- TODO: scroll magic, swiper 
+         TODO: сделать свайпер для карточек с вёрсткой макетов -->
 
+         <section class="page__layout layout section" id="sec1">
+            <div class="layout__container">
+               <div class="layout__head">
+                  <h2 class="layout__title violet">Layout</h2>
+                  <p class="layout__text">Ничего необычного, просто вёрстка макетов по шаблонам</p>
+               </div>
+               <div class="layout__content">
+                  <div class="layout__card card">
+                     <a class="card__item first" href="https://moneyandfame7.github.io/html-css-responsive/" target="_blank">
+                        <div class="card__image"></div>
+                        <div class="card__about">
+                           <h4 class="card__title">Fusion travel</h4>
+                           <p class="card__text">Мой первый сайт с кривым адаптивом. Присутствуют флексы и transition.</p>
+                        </div>
+                     </a>
+                     <a class="card__item second" href="https://moneyandfame7.github.io/html-css-template2/" target="_blank">
+                        <div class="card__image"></div>
+                        <div class="card__about">
+                           <h4 class="card__title">Happy holidays!</h4>
+                           <p class="card__text">Обычный psd макет с интернета.</p>
+                        </div>
+                     </a>
+                     <a class="card__item third" href="https://moneyandfame7.github.io/html-css-template1/" target="_blank">
+                        <div class="card__image"></div>
+                        <div class="card__about">
+                           <h4 class="card__title">Latest news</h4>
+                           <p class="card__text">Один из первых макетов с практикой на флексах.</p>
+                        </div>
+                     </a>
+                     <a class="card__item fourth" href="https://moneyandfame7.github.io/html-css-first/">
+                        <div class="card__image"></div>
+                        <div class="card__about">
+                           <h4 class="card__title">First page</h4>
+                           <p class="card__text">Мой первый сайт, не судите строго Ⓒ</p>
+                        </div>
+                     </a>
+
+                  </div>
+
+               </div>
             </div>
+
          </section>
+
+         <section class="page__javascript javascript section" id="sec2">
+            <div class="javascript__container">
+               <div class="javascript__head">
+                  <h2 class="javascript__title yellow">JavaScript</h2>
+                  <p class="javascript__text">Обычные решения задач, либо применение знаний на практике</p>
+               </div>
+            </div>
+
+         </section>
+
+         <section class="page__prompt prompt section" id="sec3">
+            <div class="prompt__container">
+               <div class="prompt__head">
+                  <h2 class="prompt__title dark-blue">Prompt</h2>
+                  <p class="prompt__text">Разные советы и подсказки по той или иной теме</p>
+               </div>
+            </div>
+
+         </section>
+
       </main>
 
    </div>
 
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 
