@@ -7,6 +7,7 @@
 
    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
    <link rel="shortcut icon" href="/img/favicon.ico" type="image/ico">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel=" stylesheet" href="css/style.css" />
    <link rel="stylesheet" href="css/media.css">
    <title>Moneyandfame</title>
@@ -138,6 +139,78 @@
                   <h2 class="javascript__title yellow">JavaScript</h2>
                   <p class="javascript__text">Обычные решения задач, либо применение знаний на практике</p>
                </div>
+               <div class="javascript__content">
+                  <!-- Slider main container -->
+                  <div class="swiper">
+                     <!-- Additional required wrapper -->
+                     <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                           <div class="swiper__preview">
+                              <div class="swiper__img first"></div>
+                              <div class="swiper__img second"></div>
+                           </div>
+                           <div class="swiper__content">
+                              <div class="swiper__about">
+                                 <h3 class="swiper__title">Работа с DOM-элементами. </h3>
+                                 <p class="swiper__text">
+                                    <span class="dark-blue">Guess number</span> - игра "угадай число", есть 10 попыток.
+                                 </p>
+                                 <p class="swiper__text">
+                                    <span class="dark-blue">Adding blocks</span> - динамическое добавление div'ов при нажатии на кнопку. Так же можно удалить последний div, или все сразу.
+                                 </p>
+                              </div>
+                              <hr class="swiper__line">
+                              <span class="swiper__text link">
+                                 Ссылка на проект на GitHub:
+                              </span>
+                              <a href="https://github.com/moneyandfame7/javascript-dom-elements">хттпс: монейандфаме7</a>
+                           </div>
+
+
+                        </div>
+                        <div class="swiper-slide second">
+                           <div class="swiper__preview">
+                              <div class="swiper__img third"></div>
+                              <div class="swiper__img fourth"></div>
+                           </div>
+                           <div class="swiper__content">
+                              <div class="swiper__about">
+                                 <h3 class="swiper__title">Анимации на чистом JavaScript</h3>
+                                 <p class="swiper__text">Самые примитивные анимации, не особо удобные в использовании и не совсем красиво работают.</p>
+                              </div>
+                              <hr class="swiper__line">
+                              <span class="swiper__text link">
+                                 Ссылка на проект на GitHub:
+                              </span>
+                              <a href="https://github.com/moneyandfame7/javascript-scroll-animation">хттпс: монейандфаме7</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide third">
+                           <div class="swiper__preview">
+                              <div class="swiper__img fifth"></div>
+                           </div>
+                           <div class="swiper__content">
+                              <div class="swiper__about">
+                                 <h3 class="swiper__title">Welcome from swiper!</h3>
+                                 <p class="swiper__text">Полноэкранный скролл, параллакс эффект, навигация. Функционал на Slider "swiper".</p>
+                              </div>
+                              <hr class="swiper__line">
+                              <span class="swiper__text link">
+                                 Ссылка на проект на GitHub:
+                              </span>
+                              <a href="https://github.com/moneyandfame7/javascript-swiper">хттпс: монейандфаме7</a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- If we need pagination -->
+                     <div class="swiper-pagination"></div>
+
+                     <!-- If we need navigation buttons -->
+
+
+                  </div>
+               </div>
             </div>
 
          </section>
@@ -155,7 +228,7 @@
       </main>
 
    </div>
-
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>

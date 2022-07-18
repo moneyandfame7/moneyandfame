@@ -32,22 +32,24 @@ for (let i = 0; i < revealElements.length; i++) {
       .addTo(controller);
 }
 
-//* ********************************** */
-
-document.addEventListener('DOMContentLoaded', () => {
-   document.querySelector('.wrapper').classList.add('loaded');
-   checkScroll();
+//* Slider swiper
+const swiper = new Swiper('.swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: true,
+   // If we need pagination
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+   },
+   // Navigation arrows
 });
-
-//* ********************************** */
 
 //* анимация шапки при скролле
 const header = document.querySelector('#header'); // шапка
-
 window.addEventListener('scroll', () => checkScroll()); // событие скролла
-
 history.scrollRestoration = 'manual'; // вверх экрана при перезагрузке страницы
-
 const checkScroll = () => {
    const scrollPosition = window.scrollY;
    if (scrollPosition !== 0) {
@@ -56,6 +58,10 @@ const checkScroll = () => {
       header.classList.remove('active');
    }
 };
+document.addEventListener('DOMContentLoaded', () => {
+   document.querySelector('.wrapper').classList.add('loaded');
+   checkScroll();
+});
 
 //* бургер меню
 const burgerMenu = () => {
@@ -97,6 +103,7 @@ const burgerMenu = () => {
       element.addEventListener('click', hambHandler);
    });
 };
+burgerMenu();
 
 //* цветовая тема
 const windowLoad = () => {
@@ -148,6 +155,4 @@ const windowLoad = () => {
       saveTheme ? localStorage.setItem('user-theme', newTheme) : null;
    };
 };
-
-burgerMenu();
 window.addEventListener('load', windowLoad);
