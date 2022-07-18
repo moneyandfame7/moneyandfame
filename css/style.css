@@ -327,28 +327,28 @@ span {
 .card__item.first .card__image {
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   background: url(/img/card-1.png);
+   background: url(../img/card-1.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
 .card__item.second .card__image {
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   background: url(/img/card-2.png);
+   background: url(../img/card-2.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
 .card__item.third .card__image {
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   background: url(/img/card-3.png);
+   background: url(../img/card-3.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
 .card__item.fourth .card__image {
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   background: url(/img/card-4.png);
+   background: url(../img/card-4.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -418,7 +418,7 @@ span {
    border-top-left-radius: 20px;
    width: 50%;
    height: 100%;
-   background: url(/img/swiper-1.png);
+   background: url(../img/swiper-1.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -426,7 +426,7 @@ span {
    border-top-right-radius: 20px;
    width: 50%;
    height: 100%;
-   background: url(/img/swiper-1.1.png);
+   background: url(../img/swiper-1.1.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -434,7 +434,7 @@ span {
    border-top-left-radius: 20px;
    width: 50%;
    height: 100%;
-   background: url(/img/swiper-2.png);
+   background: url(../img/swiper-2.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -442,7 +442,7 @@ span {
    border-top-right-radius: 20px;
    width: 50%;
    height: 100%;
-   background: url(/img/swiper-2.1.png);
+   background: url(../img/swiper-2.1.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -451,7 +451,7 @@ span {
    border-top-right-radius: 20px;
    width: 100%;
    height: 100%;
-   background: url(/img/swiper-3.png);
+   background: url(../img/swiper-3.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
